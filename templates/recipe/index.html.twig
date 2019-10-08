@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/stylelist.css') }}">{% endblock %}
+{% block body %}
+ <div class="container">
+ <h2>Les recettes du site:</h2>
+ <div class="recipe__list">
+     {% for recipe in recipes %}
+        <div class="recipe__link">
+            <a href="/recipe/{{recipe.id}}">{{recipe.name}}</a>
+        </div>
+     {% endfor %}
+ </div>
+ </div>
+{% endblock %}

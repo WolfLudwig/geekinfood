@@ -1,0 +1,35 @@
+img{
+    max-width: 100%;
+}
+.recipe__block{
+    display: flex;
+    flex-direction: column ;
+}
+.recipe__info{
+    display: flex;
+    justify-content: space-around;
+}
+.recipe__main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 1rem;
+}
+.recipe__name{
+    width: 30%;
+}
+.recipe__diff{
+    width: 20%;
+    padding-top: 3rem;
+    font-size: 1.3rem;
+}
+.recipe_picture{
+    width: 40%;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+.recipe__ingr{
+    width: 30%;
+}
+.recipe__instru{
+    width: 60%;
+}

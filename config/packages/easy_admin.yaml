@@ -1,0 +1,8 @@
+easy_admin:
+   entities:
+       # List the entity class name you want to manage
+       - App\Entity\Recipe
+       - App\Entity\Difficulty
+       - App\Entity\Ingredient
+       - App\Entity\Unit
+       - App\Entity\Instruction

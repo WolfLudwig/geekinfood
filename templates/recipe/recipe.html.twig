@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{recipe.name}} {% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/stylerecipe.css') }}">{% endblock %}
+{% block body %}
+ <div class="container">
+    <div class="recipe__block">
+        <div class="recipe__info">
+            <div class="recipe__name">
+                <h2>{{recipe.name}}</h2>
+            </div>
+            <div class="recipe__diff">
+            {{recipe.difficulty}}
+            </div>
+            <div class="recipe_picture">
+                <img src="{{recipe.image}}" alt="{{recipe.name}}"> 
+            </div>
+        </div>
+        <div class="recipe__main">
+            <div class="recipe__ingr">
+                <h3>Ingrédients:</h3>
+                {% for ingre in recipe.ingredients %}
+                <ul> 
+                    <li>{{ingre.quantity}} {{ingre.unit}} {{ingre.name}}</li>
+                </ul>
+                {% endfor %}          
+            </div> 
+            <div class="recipe__instru">
+                <p>
+                    <h3>Instructions:</h3>
+                    {% for instru in recipe.instructions %}
+                    {{instru.content}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
+ </div>
+{% endblock %}

@@ -3,10 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Grenze|PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/stylebase.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    <header>
+    <h1>GeekInFood</h1>
+        <nav>
+            <a href="/">GeekInFood</a>
+        </nav>
+    </header>
+    <main>
         {% block body %}{% endblock %}
+    </main>
+    <footer>
+    Des recettes Geeks, faites par des Geeks pour des Geeks!</footer>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

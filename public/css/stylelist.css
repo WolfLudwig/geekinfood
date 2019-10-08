@@ -1,0 +1,11 @@
+.recipe__list{
+    display: flex;
+    justify-content: space-around;
+}
+.recipe__link{
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+}
