@@ -6,3 +6,4 @@ easy_admin:
        - App\Entity\Ingredient
        - App\Entity\Unit
        - App\Entity\Instruction
+       - App\Entity\User
